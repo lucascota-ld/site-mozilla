@@ -18,7 +18,7 @@ function defineNomeUsuario(){
   meuCabecalho.textContent = 'Mozilla é legal, ' + nomeUsuario
 }
 
-if(!localStorage.getItem('nome-usuario')){
+if(localStorage.getItem('nome-usuario')){
   defineNomeUsuario()
 }else{
   var nomeSalvo = localStorage.getItem('nome-usuario')
